@@ -36,8 +36,8 @@ if (contactForm) {
 }
 
 if (contactForm) {
-  contactFormFields.forEach(function(field) {
-    field.addEventListener("input", function() {
+  contactFormFields.forEach(function (field) {
+    field.addEventListener("input", function () {
       if (checkAllFieldsPopulated()) {
         contactFormButton.removeAttribute("disabled");
       } else {
@@ -58,5 +58,5 @@ function handleContactForm(e) {
   const subject = encodeURIComponent($("input[name='subject']").value);
   const message = encodeURIComponent($("textarea[name='message']").value);
 
-  window.location.href = `mailto:username@domain?subject=${subject}&body=${message}`;
+  window.location.href = `mailto:philipedekobi@gmail.com?subject=${subject}&body=${message}`;
 }
